@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// Compute and print the sum of the first 5 prime numbers
+// Compute and print the sum of the first 4 prime numbers
 int main(void)
 {
 	int count = 0;      // number of primes found
 	int num = 2;        // current number to test
 	int sum = 0;        // running sum of primes
 
-	while (count < 5) {
+	while (count < 4) {
 		bool is_prime = true;
 		for (int i = 2; i * i <= num; i++) {
 			if (num % i == 0) {
@@ -23,7 +23,7 @@ int main(void)
 		num++;
 	}
 
-	printf("Sum of first 5 prime numbers = %d\n", sum);
+	printf("Sum of first 4 prime numbers = %d\n", sum);
 	return 0;
 }
 
